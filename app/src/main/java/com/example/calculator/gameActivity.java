@@ -51,7 +51,7 @@ public class gameActivity extends AppCompatActivity {
 
 
         String input = questionMethod();  //calls the fucntion to generate the expression
-        question.setText(input);  //shows the expression on the textview
+        question.setText("What is, "+input+"= ?");  //shows the expression on the textview
 
         answer.setText("0");
         btn1.setOnClickListener(new View.OnClickListener() {
