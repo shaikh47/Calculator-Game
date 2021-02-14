@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".gameDifficulty"></activity>
+        <activity android:name=".scoreListView" />
+        <activity android:name=".timeConversion" />
+        <activity android:name=".areaConversion" />
+        <activity android:name=".volumeConversion" />
+        <activity android:name=".LengthConversion" />
+        <activity android:name=".gameDifficulty" />
         <activity android:name=".numberSystem" />
         <activity android:name=".MainActivity" />
         <activity android:name=".gridMenu" />

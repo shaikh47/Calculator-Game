@@ -1,3 +1,53 @@
 <resources>
     <string name="app_name">Calculator</string>
+
+    <string name="LENGTH">Choose a unit</string>
+
+    <string-array name="length_arrays">
+        <item>Millimeter(mm)</item>
+        <item>Centimeter(cm)</item>
+        <item>Decimeter(dm)</item>
+        <item>Meter(m)</item>
+        <item>Kilometer(km)</item>
+        <item>Inch(in)</item>
+        <item>Foot(ft)</item>
+        <item>Mile(mile)</item>
+        <item>Nautical mile</item>
+    </string-array>
+
+
+    <string-array name="volume_arrays">
+        <item>Milliliter(ml)</item>
+        <item>Centiliter(cl)</item>
+        <item>Deciliter(dl)</item>
+        <item>Liter(l)</item>
+        <item>Kiloliter(kl)</item>
+        <item>Cubic centimeter(cc)</item>
+        <item>Cubic meter(m<sup>3</sup>)</item>
+    </string-array>
+
+
+    <string-array name="area_arrays">
+        <item>Square Centimeter</item>
+        <item>Square Decimeter</item>
+        <item>Square Meter</item>
+        <item>Hectare</item>
+        <item>Square Kilometer</item>
+        <item>Square Foot</item>
+        <item>Acre</item>
+    </string-array>
+
+
+    <string-array name="time_arrays">
+        <item>Millisecond</item>
+        <item>Second</item>
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
 </resources>
+
+

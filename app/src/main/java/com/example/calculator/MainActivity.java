@@ -41,15 +41,17 @@ public class MainActivity extends AppCompatActivity {
         TextView btnOpeningBrac = (TextView)findViewById(R.id.openingbracket);
         TextView btnClosingBrac = (TextView)findViewById(R.id.closingbracket);
         TextView btnPower = (TextView)findViewById(R.id.power);
+        TextView btnRoot = (TextView)findViewById(R.id.root);
 
         TextView btnPlus = (TextView)findViewById(R.id.plus);
         TextView btnMinus = (TextView)findViewById(R.id.minus);
         TextView btnDivide = (TextView)findViewById(R.id.divide);
         TextView btnMultiply = (TextView)findViewById(R.id.multiply);
+        TextView btnFact = (TextView)findViewById(R.id.pi);
 
         TextView btnEqual = (TextView)findViewById(R.id.equal);
 
-        ImageView menu = (ImageView) findViewById(R.id.menu);
+
 
         final TextView eqn = (TextView)findViewById(R.id.equation);
         final TextView rslt = (TextView)findViewById(R.id.result);
@@ -265,6 +267,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnFact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(eqn.getText() == "0") {
+                    eqn.setText("3.14159265");
+                }
+                else{
+                    eqn.setText(eqn.getText() + "3.14159265");
+                }
+            }
+        });
+
+        btnRoot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    String input = (String) eqn.getText();
+                    Expression exp = new ExpressionBuilder(input).build();
+                    double result = exp.evaluate();
+
+                    result = Math.sqrt(result);
+
+                    rslt.setText(String.valueOf(result));
+                    eqn.setText(String.valueOf(result));
+                }catch (Exception e){
+                    rslt.setText("Error");
+                }
+            }
+        });
+
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -315,13 +347,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),gameActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 }

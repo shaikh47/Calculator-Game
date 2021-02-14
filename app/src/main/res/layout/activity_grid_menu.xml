@@ -19,45 +19,37 @@
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/length"
+                style="@style/customStyle1"
+                android:src="@drawable/length"
+                android:scaleType="center" />
+            <ImageView
+                android:id="@+id/volume"
+                style="@style/customStyle1"
+                android:src="@drawable/volume"
+                android:scaleType="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/area"
+                style="@style/customStyle1"
+                android:src="@drawable/area"
+                android:scaleType="center" />
             <ImageView
                 android:id="@+id/baseConversion"
                 style="@style/customStyle1"
                 android:src="@drawable/base"
                 android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
-        </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
         </LinearLayout>
 
 
@@ -70,20 +62,11 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/base"
+                android:id="@+id/time"
                 style="@style/customStyle1"
-                android:src="@drawable/base"
+                android:src="@drawable/time"
                 android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
-            <ImageView
-                android:id="@+id/base"
-                style="@style/customStyle1"
-                android:src="@drawable/base"
-                android:scaleType="center" />
+
         </LinearLayout>
 
         <LinearLayout

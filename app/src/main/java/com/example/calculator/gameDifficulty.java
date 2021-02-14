@@ -10,6 +10,7 @@ import android.widget.Button;
 public class gameDifficulty extends AppCompatActivity {
 
     Button easy,medium,hard;
+    Button scoreBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class gameDifficulty extends AppCompatActivity {
         easy = findViewById(R.id.easy);
         medium = findViewById(R.id.medium);
         hard = findViewById(R.id.hard);
+        scoreBtn = findViewById(R.id.score);
 
         easy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +46,14 @@ public class gameDifficulty extends AppCompatActivity {
                 Intent intentEasy = new Intent(getApplicationContext(), gameActivity.class);
                 intentEasy.putExtra("difficulty", "10");
                 startActivity(intentEasy);
+            }
+        });
+
+        scoreBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),scoreListView.class);
+                startActivity(intent);
             }
         });
     }

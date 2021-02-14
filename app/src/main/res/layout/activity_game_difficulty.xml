@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:background="@android:color/black"
     tools:context=".MainActivity"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:gravity="top">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,7 +16,8 @@
         android:text="CHOOSE DIFFICULTY"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:layout_marginBottom="150dp"/>
 
     <Button
         android:layout_width="match_parent"
@@ -36,6 +38,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/hard"
         android:text="HARD"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:text="VIEW SCORE"
         android:textSize="40sp"
         android:textStyle="bold"/>
 

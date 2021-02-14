@@ -94,11 +94,6 @@
             android:orientation="horizontal"
             android:layout_weight="1">
 
-            <ImageView
-                android:id="@+id/menu"
-                style="@style/MenuButtonStyle"
-                android:src="@drawable/menu"
-                android:scaleType="center" />
             <TextView
                 android:id="@+id/cut"
                 style="@style/OperatorButtonStyle"

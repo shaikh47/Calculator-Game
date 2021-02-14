@@ -222,7 +222,6 @@ public class gameActivity extends AppCompatActivity {
         });
 
 
-
         btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -246,6 +245,7 @@ public class gameActivity extends AppCompatActivity {
 
                         String input = questionMethod();  //calls the fucntion to generate the expression
                         question.setText(input);  //shows the expression on the textview
+
                     } catch (Exception e) {
                         question.setText("Error");
                     }

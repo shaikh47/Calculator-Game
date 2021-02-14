@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "365622326654",
+    "firebase_url": "https://wireleab-b5dbb.firebaseio.com",
+    "project_id": "wireleab-b5dbb",
+    "storage_bucket": "wireleab-b5dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365622326654:android:f2c46d63e423f2fadd6f2f",
+        "android_client_info": {
+          "package_name": "com.example.calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365622326654-7a0oi3fkd9i0i4j258tv0lh5mp51990q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.calculator",
+            "certificate_hash": "774688d9291b81d94306bbe32391cbe41aba707e"
+          }
+        },
+        {
+          "client_id": "365622326654-lf29s3c25icf0qaloqi29avp7am8dbqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAitywC9WrPYoqDyKH_bapuXdEejhStKVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365622326654-lf29s3c25icf0qaloqi29avp7am8dbqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

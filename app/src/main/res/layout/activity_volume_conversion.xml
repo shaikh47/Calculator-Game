@@ -4,13 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".volumeConversion"
     android:orientation="vertical"
-    android:background="@android:color/black"
-    tools:context=".MainActivity">
-
-
-
-
+    android:background="@android:color/black">
 
 
     <LinearLayout
@@ -26,6 +22,35 @@
             tools:ignore="Suspicious0dp"
             android:layout_weight="2">
 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="Suspicious0dp"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                >
+
+                <Spinner
+                    android:id="@+id/selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:entries="@array/volume_arrays"
+                    android:prompt="@string/LENGTH" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FROM:"
+                    android:textSize="43sp"
+                    android:textColor="@color/white"
+                    android:background="@android:color/black"/>
+
+            </LinearLayout>
+
+
             <ScrollView
                 android:id="@+id/SCROLLER_ID1"
                 android:layout_width="fill_parent"
@@ -33,13 +58,13 @@
                 android:scrollbars="vertical"
                 android:fillViewport="true">
                 <TextView
-                    android:id="@+id/result"
+                    android:id="@+id/from"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="50sp"
+                    android:textSize="25sp"
                     android:textColor="@android:color/background_light"
                     android:textAlignment="textEnd"
-                    android:text=""
+                    android:text="0"
                     android:scrollbars="horizontal"
                     android:gravity="end" />
             </ScrollView>
@@ -61,23 +86,49 @@
             tools:ignore="Suspicious0dp"
             android:layout_weight="2">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="Suspicious0dp"
+                android:background="@android:color/black"
+                android:layout_gravity="center"
+                >
+
+                <Spinner
+                    android:id="@+id/selection1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:entries="@array/volume_arrays"
+                    android:prompt="@string/LENGTH"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TO:"
+                    android:textSize="43sp"
+                    android:textColor="@color/white"
+                    android:background="@android:color/black"/>
+
+            </LinearLayout>
             <ScrollView
                 android:id="@+id/SCROLLER_ID"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:scrollbars="vertical"
                 android:fillViewport="true">
-            <TextView
-                android:id="@+id/equation"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textSize="35sp"
-                android:textColor="@android:color/background_light"
-                android:text="0"
-                android:scrollbars="vertical"
-                android:textAlignment="textEnd"
-                android:gravity="end"
-                />
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/background_light"
+                    android:text="0"
+                    android:scrollbars="vertical"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    />
             </ScrollView>
         </LinearLayout>
 
@@ -91,50 +142,19 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/openingbracket"
-                style="@style/OperatorButtonStyle"
-                android:text="(" />
-            <TextView
-                android:id="@+id/closingbracket"
-                style="@style/OperatorButtonStyle"
-                android:text=")" />
-            <TextView
-                android:id="@+id/root"
-                style="@style/OperatorButtonStyle"
-                android:text="√" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1">
-
             <TextView
-                android:id="@+id/cut"
-                style="@style/OperatorButtonStyle"
-                android:text="C"
-                />
-            <TextView
-                android:id="@+id/pi"
-                style="@style/OperatorButtonStyle"
-                android:text="π" />
-            <TextView
-                android:id="@+id/power"
-                style="@style/OperatorButtonStyle"
-                android:text="^" />
-            <TextView
-                android:id="@+id/divide"
-                style="@style/OperatorButtonStyle"
-                android:text="/" />
-
+                android:id="@+id/equal"
+                style="@style/ActionButtonStyle"
+                android:text="=" />
         </LinearLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -152,10 +172,7 @@
                 android:id="@+id/nine"
                 style="@style/NumberButtonStyle"
                 android:text="9" />
-            <TextView
-                android:id="@+id/multiply"
-                style="@style/OperatorButtonStyle"
-                android:text="X" />
+
         </LinearLayout>
 
 
@@ -176,10 +193,7 @@
                 android:id="@+id/six"
                 style="@style/NumberButtonStyle"
                 android:text="6" />
-            <TextView
-                android:id="@+id/minus"
-                style="@style/OperatorButtonStyle"
-                android:text="-" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -199,10 +213,7 @@
                 android:id="@+id/three"
                 style="@style/NumberButtonStyle"
                 android:text="3" />
-            <TextView
-                android:id="@+id/plus"
-                style="@style/OperatorButtonStyle"
-                android:text="+" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -223,15 +234,10 @@
                 style="@style/OperatorButtonStyle"
                 android:src="@drawable/erase"
                 android:scaleType="center" />
-            <TextView
-                android:id="@+id/equal"
-                style="@style/ActionButtonStyle"
-                android:text="=" />
         </LinearLayout>
 
 
 
     </LinearLayout>
-
 
 </LinearLayout>
